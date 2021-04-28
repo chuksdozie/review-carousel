@@ -37,7 +37,7 @@ reviews = [
     {
         revname:"Lina Splendid",
         revjobtitle:"CEO Splendid Farm",
-        revtext:"Dozie is a guy with a big heart. He sets a goal and strives to make it come true. He hardly gives up.",
+        revtext:"Dozie is a guy with a big heart... He sets a goal and strives to make it come true. He hardly gives up.",
         revimage:"lina.jpg"
     }
 ]
