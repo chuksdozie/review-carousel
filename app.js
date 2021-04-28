@@ -24,7 +24,7 @@ reviews = [
     {
         revname:"Will Smith",
         revjobtitle:"Hollywood Actor",
-        revtext:"Honestly, Ama come clean, I dont know sh*t about this guy, he has just been all around, Will, can you give me review? Mehn! I just had to give him that review if I wanted some peace.",
+        revtext:"Honestly, Ama come clean, I dont know sh*t about this guy, he has just been all around, Will, can you give me review? Mehn! I just had to give him that review if I wanted some peace...",
         revimage:"smith.jpg"
     },
 
