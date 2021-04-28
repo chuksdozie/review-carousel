@@ -77,4 +77,7 @@ body {
 
 button {
   height: 50px;
+  border-width: 1px;
+  border-radius: 4px;
+  outline: none;
 }
