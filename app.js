@@ -3,7 +3,7 @@ reviews = [
     {
         revname:"Cally Calista",
         revjobtitle:"Laundry Expert",
-        revtext:"BLAQ has been the plug to my graphics, I recommend this company for all graphics works, tested and trusted.",
+        revtext:"BLAQ has been the plug for my graphics needs, I recommend this company for all graphics works, tested and trusted.",
         revimage:"cally1.jpg"
     },
 
@@ -24,7 +24,7 @@ reviews = [
     {
         revname:"Will Smith",
         revjobtitle:"Hollywood Actor",
-        revtext:"Honestly, Ama come clean, I dont know sh*t about this guy, he has just been all around, Will can you give me review? Mehn! I just had to give him that review if I wanted some peace.",
+        revtext:"Honestly, Ama come clean, I dont know sh*t about this guy, he has just been all around, Will, can you give me review? Mehn! I just had to give him that review if I wanted some peace.",
         revimage:"smith.jpg"
     },
 
@@ -35,3 +35,59 @@ reviews = [
         revimage:"trump.jpg"
     }
 ]
+
+const image = document.querySelector(".p-image")
+const aname = document.querySelector(".p-name")
+const jobtitle = document.querySelector(".p-jobtitle")
+const reviewtext = document.querySelector(".review-text")
+
+const prevBut = document.querySelector(".prev-but")
+const nextBut = document.querySelector(".next-but")
+const randomBut = document.querySelector(".random-but")
+
+currentpos = 0
+
+function nextreview(){
+    const item = reviews[currentpos];
+    image.src = item.revimage
+    aname.textContent = item.revname
+    jobtitle.textContent = item.revjobtitle
+    reviewtext.textContent = item.revtext 
+}
+
+function nextbutton(){
+    if(currentpos < reviews.length - 1){
+        currentpos++
+        nextreview()
+    }
+    else{
+        currentpos = 0
+        nextreview()
+    }
+    
+}
+
+function prevbutton(){
+    if(currentpos > 0){
+        currentpos--
+        nextreview()
+    }
+    else{
+        currentpos = reviews.length - 1
+        nextreview()
+    }
+    
+}
+
+function randombutton(){
+    currentpos = Math.floor(Math.random()*reviews.length)
+    console.log(currentpos)
+    nextreview()
+    
+}
+
+
+window.addEventListener("DOMContentLoaded", nextreview)
+nextBut.addEventListener("click", nextbutton)
+prevBut.addEventListener("click", prevbutton)
+randomBut.addEventListener("click", randombutton)
