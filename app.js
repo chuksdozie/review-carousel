@@ -33,6 +33,12 @@ reviews = [
         revjobtitle:"Former President Of the United States",
         revtext:"I wish to skip this review, I mean I dont know this guy, he said its for a project, I guess I will review the option of giving him a review",
         revimage:"trump.jpg"
+    },
+    {
+        revname:"Lina Splendid",
+        revjobtitle:"CEO Splendid Farm",
+        revtext:"Dozie is a guy with a big heart. He sets a goal and strives to make it come true. He hardly gives up.",
+        revimage:"lina.jpg"
     }
 ]
 
