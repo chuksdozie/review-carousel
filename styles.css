@@ -8,6 +8,7 @@ body {
 #gen-cont {
   margin: 5vh auto 10px;
   width: 90%;
+  height: 70vh;
   background-color: rgb(223, 217, 217);
   padding: 10px;
   border-radius: 5px;
